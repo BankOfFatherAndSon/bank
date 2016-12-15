@@ -1,7 +1,13 @@
 
 public class Depot {
+
+	/*
+	 * - Depotnummer: int
+	 * - Kunden ID: int
+	 * - Portfolio IDs: int
+	 * - Konto Nr.: int
+	 */
 	
-public static void main(String[] args) {
-	System.out.println("Aothet Rest");
-}
+	
+	
 }
