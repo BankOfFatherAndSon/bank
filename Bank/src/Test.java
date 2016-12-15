@@ -1,11 +1,17 @@
 
 public class Test {
 	public static void main(String[] args) {
-		System.out.println("Hallo Fabio");
-		System.out.println("Timmy ist auch dabei");
-		System.out.println("Michi ist immernoch da");
-		System.out.println("asdf");
-		System.out.println("Ich has glöscht und namal neu abeglade - Timi");
-		System.out.println("dä hinderletscht isch au däbi");
+
+		Konto k1 = new Konto("Timi", "Osoko");
+		System.out.println(k1.getKontoNr());
+
+		Konto k2 = new Konto("Reto", "Hegi");
+		System.out.println(k2.getKontoNr());
+		
+		Konto k3 = new Konto("Michael", "Rossi");
+		System.out.println(k3.getKontoNr());
+		
+		Konto k4 = new Konto("Fabio", "Mandanici");
+		System.out.println(k4.getKontoNr());
 	}
 }

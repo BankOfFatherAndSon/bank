@@ -1,10 +1,10 @@
-// To Change
-
-
+import ch.hwz.bfas.util.KontoIDCreator;
 
 public class Konto {
 	/*
-	 * Inhaber : String Kontonummer: Int BookingNr: Int
+	 * Inhaber : String
+	 * Kontonummer:Int
+	 * BookingNr: Int
 	 */
 
 	String vorname, nachname;
@@ -14,12 +14,12 @@ public class Konto {
 	public Konto(String vorname, String nachname) {
 		this.vorname = vorname;
 		this.nachname = nachname;
-		this.kontoNr = genKonID();
+		this.kontoNr = generateKonID();
 	}
 
 	// Methode
-	private int genKonID() {
-		return 2;
+	private int generateKonID() {
+		return new KontoIDCreator().getNr();
 	}
 
 	// Get/Set
