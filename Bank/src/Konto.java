@@ -1,10 +1,17 @@
 import ch.hwz.bfas.util.KontoIDCreator;
 
 public class Konto {
-	/*
-	 * Inhaber : String
-	 * Kontonummer:Int
-	 * BookingNr: Int
+	/* Inhaber / Kontonummer / BookungNr
+	 * 
+	 * TODO
+	 * Inhaber, Konto & Booking nummer in eine Datenbank oder Array speichern
+	 * BookingNr, was ist das? Für was brauchen wir diese?
+	 * 
+	 * 
+	 * Done:
+	 * Kontonummer:
+	 * 	- Txt Datei erstellt für Zählen der Kontonummer
+	 * 	- Zählerfunktion eingebaut
 	 */
 
 	String vorname, nachname;
@@ -16,6 +23,13 @@ public class Konto {
 		this.nachname = nachname;
 		this.kontoNr = generateKonID();
 	}
+
+	/*public Konto(String vorname, String nachname, int kontoNr, int bookingNr) {
+		this.vorname = vorname;
+		this.nachname = nachname;
+		this.kontoNr = generateKonID();
+		this.bookingNr = bookingNr;
+	}*/
 
 	// Methode
 	private int generateKonID() {

@@ -1,15 +1,23 @@
 
 public class Kunde {
-	/*
-	 * - Name : String - Kundennummer: int - Kunden ID: int - Hintergrundskonto:
-	 * int - Adresse: string - Telefonnummer: int - Email: string
+	/* 
+	 * getVorname, getNachname, getKontonummer
+	 * kundenID, adresse, telefonnummer, email
 	 */
 
-	String name, adresse, email;
-	int kundennummer, kundenID, hintergrundskonto, telefonnummer;
+	String adresse, email, getVorname, getNachname;
+	int kundennummer, kundenID, Kontonummer;
+	double telefonnummer;
 
-	//Kuo
-	
+	// Konstruktor
+		public Kunde(String vorname, String nachname, int kontonummer, String adresse, String email, int kundennummer, int kundenID, double telefonnummer) {
+			super ();
+			this.adresse = adresse;
+			this.email = email;
+			this.kundennummer = kundennummer;
+			this.kundenID = kundenID;
+			this.telefonnummer = telefonnummer;
+		}
 	
 	// Methoden
 	/*
