@@ -1,3 +1,5 @@
+package ch.hwz.bfas.test;
+import ch.hwz.fbas.Konto;
 
 public class Test {
 	public static void main(String[] args) {
@@ -6,9 +8,9 @@ public class Test {
 		// Möglichkeit Konto und Kunde zu verbinden??
 		// Damit ich die Infos aus Konto auf Kunde übertragen kann..args.
 		Konto k1 = new Konto("Timi", "Osoko");
-		Kunde ku1 = new Kunde(k1.vorname, k1.nachname, k1.kontoNr, "Rietschenweg 49", "timiosoko@hotmail.com", 1, 1, /* wieso ist dies kein double?*/ 0799609999);
+		// Kunde ku1 = new Kunde(k1.vorname, k1.nachname, k1.kontoNr, "Rietschenweg 49", "timiosoko@hotmail.com", 1, 1, /* wieso ist dies kein double?*/ 0799609999);
 		System.out.println(k1.getKontoNr());
-		System.out.println(ku1.adresse);
+		//System.out.println(ku1.adresse);
 		
 		
 

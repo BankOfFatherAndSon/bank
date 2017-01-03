@@ -1,3 +1,4 @@
+package ch.hwz.fbas;
 import ch.hwz.bfas.util.KontoIDCreator;
 
 public class Konto {

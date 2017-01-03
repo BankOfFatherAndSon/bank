@@ -1,3 +1,4 @@
+package ch.hwz.fbas;
 
 public class Depot {
 

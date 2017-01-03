@@ -1,3 +1,4 @@
+package ch.hwz.fbas;
 import java.io.IOException;
 import java.util.Map;
 
