@@ -1,56 +1,28 @@
 package ch.hwz.fbas;
-import ch.hwz.bfas.util.KontoIDCreator;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Konto {
-	/* Inhaber / Kontonummer / BookungNr
-	 * 
-	 * TODO
-	 * Inhaber, Konto & Booking nummer in eine Datenbank oder Array speichern
-	 * BookingNr, was ist das? Für was brauchen wir diese?
-	 * 
-	 * 
-	 * Done:
-	 * Kontonummer:
-	 * 	- Txt Datei erstellt für Zählen der Kontonummer
-	 * 	- Zählerfunktion eingebaut
-	 */
 
-	String vorname, nachname;
-	int kontoNr, bookingNr;
+	private int kontoNr;
 
-	// Konstruktor
-	public Konto(String vorname, String nachname) {
-		this.vorname = vorname;
-		this.nachname = nachname;
-		this.kontoNr = generateKonID();
+	private List<Kapital> kapitalListe = new ArrayList<Kapital>();
+	
+	
+	// Methoden
+	public void addKapital(Kapital kapital1) {
+		kapitalListe.add(kapital1);
+
 	}
 
-	/*public Konto(String vorname, String nachname, int kontoNr, int bookingNr) {
-		this.vorname = vorname;
-		this.nachname = nachname;
-		this.kontoNr = generateKonID();
-		this.bookingNr = bookingNr;
-	}*/
-
-	// Methode
-	private int generateKonID() {
-		return new KontoIDCreator().getNr();
-	}
-
-	// Get/Set
-	public String getVorname() {
-		return vorname;
-	}
-
-	public String getNachname() {
-		return nachname;
-	}
-
-	public int getKontoNr() {
+	// SET GET
+	public int getKontonummer() {
 		return kontoNr;
 	}
 
-	public int getBookingNr() {
-		return bookingNr;
+	public void setKontonummer(int kontonummer) {
+		this.kontoNr = kontonummer;
 	}
+
 }
