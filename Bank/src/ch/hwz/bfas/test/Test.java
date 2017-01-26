@@ -6,7 +6,9 @@ import ch.hwz.bfas.Kunde;
 public class Test {
 	public static void main(String[] args) {
 
-		// Create Kunde and Set Variables
+		
+	
+		/*// Create Kunde and Set Variables
 		Kunde k1 = new Kunde(1); // 1 = Kundenummer
 		k1.setName("Müller");
 		k1.setVorname("Max");
@@ -30,6 +32,6 @@ public class Test {
 		 * Depot depot = new Depot(Anlagestrategie); // --> Muss instanziert
 		 * werden gemäss Rossi k1.addDepot(depot);
 		 */
-
+*/
 	}
 }
