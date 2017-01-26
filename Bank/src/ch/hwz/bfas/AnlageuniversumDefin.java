@@ -13,21 +13,31 @@ public class AnlageuniversumDefin {
 
 	public AnlageuniversumDefin(Anlage anlage) {
 		this.anlage = anlage;
-		// TODO Auto-generated constructor stub
 	}
+
+	/*
+	 * Hallo Rossi, die gwählt Liste wo unde i de Methode selection() usgwählt
+	 * wird söll nacher zur untestahende Liste gewaehlte Liste hinzuegfüegt
+	 * werde, das macht s programmiere eifacher, du gsehsch es biispiel devo in
+	 * case A
+	 */
+	abstractPortfolio abstractPortfolio;
+	
+	
 
 	public void selection() {
 
 		List<String> listA = new ArrayList<String>();
+
 		listA.add("ABBN");
 		listA.add("ATLN");
 		listA.add("ADEN");
 		listA.add("ASCN");
-		
 
 		switch (anlage) {
 		case A:
 			System.out.println(listA);
+			List<String> gewaehlteListe = listA; // Muss für jeden case gmacht werde
 			break;
 
 		case B:
@@ -111,9 +121,18 @@ public class AnlageuniversumDefin {
 
 	}
 
+
+
 	public static void main(String[] args) {
 		AnlageuniversumDefin ebay = new AnlageuniversumDefin(Anlage.A);
 		ebay.selection();
+	}
+
+
+
+	public void getGewaehlteListe() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
