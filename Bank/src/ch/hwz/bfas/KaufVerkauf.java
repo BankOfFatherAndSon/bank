@@ -1,4 +1,4 @@
-package ch.hwz.fbas;
+package ch.hwz.bfas;
 
 public class KaufVerkauf {
  

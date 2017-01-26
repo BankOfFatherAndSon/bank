@@ -1,7 +1,7 @@
 package ch.hwz.bfas.test;
-import ch.hwz.fbas.Kapital;
-import ch.hwz.fbas.Konto;
-import ch.hwz.fbas.Kunde;
+import ch.hwz.bfas.Kapital;
+import ch.hwz.bfas.Konto;
+import ch.hwz.bfas.Kunde;
 
 public class Test {
 	public static void main(String[] args) {

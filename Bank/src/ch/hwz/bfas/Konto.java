@@ -1,4 +1,4 @@
-package ch.hwz.fbas;
+package ch.hwz.bfas;
 
 import java.util.ArrayList;
 import java.util.List;
