@@ -3,14 +3,14 @@ package ch.hwz.bfas;
 
 public class Kapital {
 
-	int wertKapital;
-	String waehrung;
-	boolean einzahlungErfolgt;
+	private double wertKapital;
+	private String waehrung;
+	private boolean einzahlungErfolgt;
 
 	// Konstruktor
 
-	public Kapital(String waehrung, boolean einzahlungErfolgt) {
-		wertKapital = 0;
+	public Kapital(String waehrung, double wertKapital, boolean einzahlungErfolgt) {
+		this.wertKapital = wertKapital;
 		this.waehrung = waehrung;
 		this.einzahlungErfolgt = einzahlungErfolgt;
 
@@ -18,7 +18,7 @@ public class Kapital {
 
 	
 	// GET & SET
-	public int getWertKapital() {
+	public double getWertKapital() {
 		return wertKapital;
 	}
 
@@ -41,6 +41,10 @@ public class Kapital {
 	public void setEinzahlungErfolgt(boolean einzahlungErfolgt) {
 		this.einzahlungErfolgt = einzahlungErfolgt;
 	}
+
+	
+
+	
+	}
 	
 	
-}
