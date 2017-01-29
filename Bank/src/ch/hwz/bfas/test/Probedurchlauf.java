@@ -85,6 +85,9 @@ public class Probedurchlauf {
 		
 		System.out.println();
 		System.err.println("HELLO");
+		
+		testVorschlag.setPortfolio(testPortfolio);
+		
 		testVorschlag.annahme((ArrayList<String>) testVorschlag.getListGewaehlt());
 		//System.out.println(testVorschlag.getListGewaehlt());
 		

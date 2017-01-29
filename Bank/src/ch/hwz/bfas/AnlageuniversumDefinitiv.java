@@ -12,7 +12,7 @@ public class AnlageuniversumDefinitiv {
 
 	private ArrayList<String> listGewaehlt = new ArrayList<String>();
 	char buchstabe;
-	Portfolio portfolio;
+	private Portfolio portfolio;
 	Anlage anlage;
 	Kunde kunde;
 	boolean einverstanden = false;
@@ -182,6 +182,14 @@ public class AnlageuniversumDefinitiv {
 	}
 
 	// GET UND SET
+	
+	public Portfolio getPortfolio() {
+		return portfolio;
+	}
+
+	public void setPortfolio(Portfolio portfolio) {
+		this.portfolio = portfolio;
+	}
 
 	public List<String> getListGewaehlt() {
 		return listGewaehlt;
