@@ -11,12 +11,15 @@ public class Aktie extends abstractPortfolio {
 
 	private Kunde kunde;
 
+	
+	// Konstruktor
 	public Aktie(Stock stock) {
 	this.isin = stock.getSymbol();
-	
-
 	}
 
+	
+	
+	
 	public String getIsin() {
 		return isin;
 	}

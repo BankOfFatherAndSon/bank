@@ -29,4 +29,12 @@ public class Konto {
 		this.kontoNr = kontonummer;
 	}
 
+	public List<Kapital> getKapitalListe() {
+		return kapitalListe;
+	}
+
+	public void setKapitalListe(List<Kapital> kapitalListe) {
+		this.kapitalListe = kapitalListe;
+	}
+ 
 }

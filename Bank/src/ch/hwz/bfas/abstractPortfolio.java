@@ -5,9 +5,9 @@ import java.util.List;
 
 abstract public class abstractPortfolio {
 
-
+	Portfolio portfolio;
 	Aktie aktie;
-	AnlageuniversumDefin anlageuniversumDefin;
+	AnlageuniversumDefinitiv anlageuniversumDefinitiv;
 	
 	
 	

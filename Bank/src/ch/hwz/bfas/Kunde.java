@@ -25,7 +25,6 @@ public class Kunde {
 	// Methoden
 	public void addKonto(Konto konto) {
 		kontoListe.add(konto);
-
 	}
 
 	public void addDepot(Depot depot) {

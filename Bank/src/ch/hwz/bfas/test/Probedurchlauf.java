@@ -1,7 +1,10 @@
 package ch.hwz.bfas.test;
 
+import java.util.ArrayList;
+
 import ch.hwz.bfas.Aktie;
-import ch.hwz.bfas.AnlageuniversumDefin;
+import ch.hwz.bfas.AnlageuniversumDefinitiv;
+import ch.hwz.bfas.AnlageuniversumDefinitiv.Anlage;
 import ch.hwz.bfas.Anlagevorschlag;
 import ch.hwz.bfas.Depot;
 import ch.hwz.bfas.Kapital;
@@ -25,7 +28,7 @@ public class Probedurchlauf {
 
 		Depot depot;
 
-		AnlageuniversumDefin anlageuniversumDefin;
+		AnlageuniversumDefinitiv anlageuniversumDefinitiv;
 
 		// Kapital wird definiert
 		Kapital testKapital = new Kapital("CHF", 1000.0, true);
@@ -64,5 +67,33 @@ public class Probedurchlauf {
 		testKunde.addKonto(testKonto);
 		System.err.println("testKonto wird testKunde zugewiesen:");
 		System.out.println("Kundennummer: " + testKunde.getKundennummer() + " hat folgende Kontonummer: " + testKonto.getKontonummer());
+		System.out.println();
+		
+		//Portfolio initialisieren
+		Portfolio testPortfolio = new Portfolio();
+		
+		
+		// Anlagevorschlag
+		System.err.println("Anlagevorschlag wird erstellt");
+		AnlageuniversumDefinitiv testVorschlag = new AnlageuniversumDefinitiv(Anlage.A, testKunde);
+		System.out.println("Der Betrag ist sein Kontoguthaben (Fürs erste)");
+		System.out.println("Kunde entscheidet sich für Anlageplan 'A'");
+		System.out.println("Text aus Methode selection() folgt unten:");
+		System.out.println();
+		System.err.println("Text selection():");
+		testVorschlag.selection(Anlage.A);
+		
+		System.out.println();
+		System.err.println("HELLO");
+		testVorschlag.annahme((ArrayList<String>) testVorschlag.getListGewaehlt());
+		//System.out.println(testVorschlag.getListGewaehlt());
+		
+		System.out.println();
+
+	
+	
+	
+	
+	
 	}
 }

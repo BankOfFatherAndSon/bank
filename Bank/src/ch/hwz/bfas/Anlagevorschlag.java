@@ -1,17 +1,29 @@
 package ch.hwz.bfas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Anlagevorschlag extends abstractPortfolio {
 
 	//get List from AnlageuniversumDef
-	AnlageuniversumDefin anlageuniversumDefin;
+	AnlageuniversumDefinitiv anlageuniversumDefinitiv;
 	
 	// Kapital abrufen
 	int getWertKapitalTest = 100; // - get Wert Kapital
 	int modulo;
 
-	public void selection() {
+	public void selection(Kunde kunde) {
 		// Sich für ein Paket enscheiden
-		anlageuniversumDefin.getGewaehlteListe();
+		
+		List listeATimi = new ArrayList();
+
+		
+		listeATimi.add("ABBN");
+		listeATimi.add("ATLN");
+		listeATimi.add("ADEN");
+		listeATimi.add("ASCN");
+		
+		anlageuniversumDefinitiv.getGewaehlteListe();
 		
 		//Summe des Preises der Aktien in diesem Array ausrechnen
 		// TODO vielleicht String to Int
@@ -37,7 +49,7 @@ public class Anlagevorschlag extends abstractPortfolio {
 		// TODO Neue Anlagestrategie wählen --> Neuer Buchstabe
 		
 		//Anschliessend erneut selektion
-		selection();
+	//	selection();
 		
 	}
 	
