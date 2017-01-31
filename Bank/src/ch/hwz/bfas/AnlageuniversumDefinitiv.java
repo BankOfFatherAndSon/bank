@@ -15,7 +15,7 @@ public class AnlageuniversumDefinitiv {
 
 	}
 
-	private ArrayList<AktieDef> listGewaehlt = new ArrayList<>();
+	private List<AktieDef> listGewaehlt = new ArrayList<>();
 	char buchstabe;
 	private Portfolio portfolio;
 	Anlage anlage;
@@ -53,6 +53,9 @@ public class AnlageuniversumDefinitiv {
 	}
 
 	public void selection(Anlage anlage) {
+		
+		// Jedse Mal bei methode zuerst zurückgesetzt
+		listGewaehlt = new ArrayList<>();
 
 		switch (anlage) {
 		case A:
@@ -296,10 +299,18 @@ public class AnlageuniversumDefinitiv {
 			break;
 		}
 		
+		// Summe von aktien die gewählt wurde = Summe
+		BigDecimal summe = new BigDecimal("0");
 		
 		for (AktieDef item : listGewaehlt) {
 			System.out.println(item.getPrice());
+			
+		summe = summe.add(item.getPrice());
+		
+		
 		}
+		
+		System.out.println("Summe ist zB bei A " + summe);
 		
 		System.out.println(Anlage.A);
 		System.out.println("Sie haben sich fï¿½r Anlagestrategie '" + buchstabe + "' entschieden");
@@ -334,7 +345,7 @@ public class AnlageuniversumDefinitiv {
 
 	}
 
-	public void annahme(List<String> listGewaehlt){
+	public void annahme(List<AktieDef> listGewaehlt){
 		this.listGewaehlt = listGewaehlt;
 		
 		portfolio.setPortfolioList(listGewaehlt);
@@ -358,7 +369,7 @@ public class AnlageuniversumDefinitiv {
 		this.portfolio = portfolio;
 	}
 
-	public ArrayList<AktieDef> getListGewaehlt() {
+	public List<AktieDef> getListGewaehlt() {
 		return listGewaehlt;
 	}
 

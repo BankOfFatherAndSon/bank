@@ -8,7 +8,7 @@ public class Portfolio extends abstractPortfolio {
 	
 	
 	private int portfolioID = 1;
-	private List<String> portfolioList = new ArrayList<String>();
+	private List<AktieDef> portfolioList = new ArrayList<>();
 
 	
 	
@@ -25,11 +25,11 @@ public class Portfolio extends abstractPortfolio {
 		this.portfolioID = portfolioID;
 	}
 
-	public List<String> getPortfolioList() {
+	public List<AktieDef> getPortfolioList() {
 		return portfolioList;
 	}
 
-	public void setPortfolioList(List<String> listGewaehlt) {
+	public void setPortfolioList(List<AktieDef> listGewaehlt) {
 		this.portfolioList = listGewaehlt;
 	}
 	
