@@ -26,7 +26,7 @@ public class AnlageuniversumDefinitiv {
 	public void einverstanden(boolean einverstanden){
 	this.einverstanden = einverstanden;
 	
-	// TODO einstellen dass der Klient auswählen kann aber im Moment immer einverstanden
+	// TODO einstellen dass der Klient auswï¿½hlen kann aber im Moment immer einverstanden
 	einverstanden = true;
 	
 	
@@ -35,7 +35,7 @@ public class AnlageuniversumDefinitiv {
 		annahme(listGewaehlt);
 		
 	} else {
-		// TODO Hier müsste nicht direkt auf anlage sonder auf auswahl des Kapitals für selection verwiesen werden
+		// TODO Hier mï¿½sste nicht direkt auf anlage sonder auf auswahl des Kapitals fï¿½r selection verwiesen werden
 		selection(anlage);
 	}
 	
@@ -56,99 +56,251 @@ public class AnlageuniversumDefinitiv {
 
 			break;
 
+
 		case B:
-			System.out.println("BARN " + "BBN " + "BOBNN " + "BVZN ");
+
+			listGewaehlt.add("BAYN");
+			listGewaehlt.add("BNP");
+			listGewaehlt.add("BSD2");
+			listGewaehlt.add("BMW");
+
+			buchstabe = 'B';
+
 			break;
+
 		case C:
-			System.out.println("CMBN " + "CLN " + "CPHN " + "CSGN ");
+			listGewaehlt.add("CSGN");
+			listGewaehlt.add("CRG");
+			listGewaehlt.add("ADEN"); // To add
+			listGewaehlt.add("ASCN"); // to ad
+
+			buchstabe = 'C';
 			break;
+
 		case D:
-			System.out.println("DAE" + "KABN " + "DUFN ");
+			listGewaehlt.add("DAI");
+			listGewaehlt.add("DBK");
+			listGewaehlt.add("BSN");
+			listGewaehlt.add("DTE");
+
+			buchstabe = 'D';
 			break;
+
 		case E:
-			System.out.println("ESUN " + "EFGN " + "EMMN " + "EMSN");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'E';
 			break;
+
 		case F:
-			System.out.println("F" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'F';
 			break;
+
 		case G:
-			System.out.println("G" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'G';
 			break;
+
 		case H:
-			System.out.println("H" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'H';
 			break;
+
 		case I:
-			System.out.println("I" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'I';
 			break;
+
 		case J:
-			System.out.println("J" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'J';
 			break;
+
 		case K:
-			System.out.println("K" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'K';
 			break;
+
 		case L:
-			System.out.println("L" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'L';
 			break;
+
 		case M:
-			System.out.println("M" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'M';
 			break;
+
 		case N:
-			System.out.println("N" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'N';
 			break;
+
 		case O:
-			System.out.println("O" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'O';
 			break;
+
 		case P:
-			System.out.println("P" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'P';
 			break;
+
 		case Q:
-			System.out.println("Q" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'Q';
 			break;
+
 		case R:
-			System.out.println("R" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'R';
 			break;
+
 		case S:
-			System.out.println("S" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'S';
 			break;
+
 		case T:
-			System.out.println("T" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'T';
 			break;
+
 		case U:
-			System.out.println("U" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'U';
 			break;
+
 		case V:
-			System.out.println("V" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'V';
 			break;
+
 		case W:
-			System.out.println("W" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'W';
 			break;
+
 		case X:
-			System.out.println("X" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'X';
 			break;
+
 		case Y:
-			System.out.println("Y" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'Y';
 			break;
+
 		case Z:
-			System.out.println("Z" + "" + "" + "");
+			listGewaehlt.add("ABBN");
+			listGewaehlt.add("ATLN");
+			listGewaehlt.add("ADEN");
+			listGewaehlt.add("ASCN");
+
+			buchstabe = 'Z';
 			break;
 		default:
 			break;
 		}
 
-		System.out.println("Sie haben sich für Anlagestrategie '" + buchstabe + "' entschieden");
+		System.out.println("Sie haben sich fï¿½r Anlagestrategie '" + buchstabe + "' entschieden");
 		System.out.println("Dies beinhaltet folgende Aktien: " + listGewaehlt);
-		System.out.println("Der Betrag für 1 Aktienpaket ist: [KOSTEN]");
+		System.out.println("Der Betrag fï¿½r 1 Aktienpaket ist: [KOSTEN]");
 		System.out.println();
 		System.out.println("Unser Vorschlag:");
 		System.out.println("[MODULO] Mal das Aktienpaket '" + buchstabe + "'");
 
 		System.out.println();
 		System.out.println("Total Kosten Aktien: " + "[KOSTEN]*[MODULO]");
-		System.out.println("Ihr zur verfügung stehendes Kapital: "
+		System.out.println("Ihr zur verfï¿½gung stehendes Kapital: "
 				+ kunde.getKontoListe().get(0).getKapitalListe().get(0).getWaehrung() + " "
 				+ kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital());
 		System.out.println(
-				"Restbetrag auf Ihrem Konto nach Transaktion: " + "[getWährung + getKontostand] - [KOSTEN]*[MODULO]");
+				"Restbetrag auf Ihrem Konto nach Transaktion: " + "[getWï¿½hrung + getKontostand] - [KOSTEN]*[MODULO]");
 
 		System.out.println();
 		System.out.println("Einverstanden?");
