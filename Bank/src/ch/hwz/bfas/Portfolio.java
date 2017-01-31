@@ -29,8 +29,8 @@ public class Portfolio extends abstractPortfolio {
 		return portfolioList;
 	}
 
-	public void setPortfolioList(List<String> portfolioList) {
-		this.portfolioList = portfolioList;
+	public void setPortfolioList(List<String> listGewaehlt) {
+		this.portfolioList = listGewaehlt;
 	}
 	
 	// Portfolio dem Depot zuweisen Methode ist in Depot.
