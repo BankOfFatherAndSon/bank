@@ -31,8 +31,8 @@ public class AnlageuniversumDefinitiv {
 	
 	
 	if (einverstanden = true) {
-		System.out.println("Annahme");
-		//annahme(listGewaehlt);
+		System.out.println("braucht es diese Methode noch? einverstanden()");
+		annahme(listGewaehlt);
 		
 	} else {
 		// TODO Hier müsste nicht direkt auf anlage sonder auf auswahl des Kapitals für selection verwiesen werden
@@ -171,7 +171,7 @@ public class AnlageuniversumDefinitiv {
 		this.listGewaehlt = listGewaehlt;
 		
 		portfolio.setPortfolioList(listGewaehlt);
-		
+		System.out.println("Annahme funktioniert!");
 	}
 	
 	
