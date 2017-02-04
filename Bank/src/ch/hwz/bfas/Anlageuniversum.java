@@ -32,7 +32,7 @@ public class Anlageuniversum {
 	public void einverstanden(boolean einverstanden){
 	this.einverstanden = einverstanden;
 	
-	// TODO einstellen dass der Klient auswählen kann aber im Moment immer einverstanden
+	// TODO einstellen dass der Klient auswï¿½hlen kann aber im Moment immer einverstanden
 	einverstanden = true;
 	
 	
@@ -40,7 +40,7 @@ public class Anlageuniversum {
 		annahme(listGewaehlt);
 		
 	} else {
-		// TODO Hier müsste nicht direkt auf anlage sonder auf auswahl des Kapitals für selection verwiesen werden
+		// TODO Hier mï¿½sste nicht direkt auf anlage sonder auf auswahl des Kapitals fï¿½r selection verwiesen werden
 		selection(anlage);
 	}
 	
@@ -54,7 +54,7 @@ public class Anlageuniversum {
 
 	public void selection(Anlage anlage) {
 		
-		// Jedse Mal bei methode zuerst zurückgesetzt
+		// Jedse Mal bei methode zuerst zurï¿½ckgesetzt
 		listGewaehlt = new ArrayList<>();
 
 		switch (anlage) {
@@ -72,44 +72,44 @@ public class Anlageuniversum {
 
 		case B:
 
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("BMW.DE"));
+			listGewaehlt.add(new AktieDef("BAYN.DE"));
+			listGewaehlt.add(new AktieDef("BNP.PA"));
+			listGewaehlt.add(new AktieDef("BBVA.MC"));
 
 			buchstabe = 'B';
 
 			break;
 
 		case C:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("CA.PA"));
+			listGewaehlt.add(new AktieDef("CSCO"));
+			listGewaehlt.add(new AktieDef("CVX"));
+			listGewaehlt.add(new AktieDef("CS"));
 
 			buchstabe = 'C';
 			break;
 
 		case D:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("DPW.DE"));
+			listGewaehlt.add(new AktieDef("DTE.DE"));
+			listGewaehlt.add(new AktieDef("DBK.DE"));
+			listGewaehlt.add(new AktieDef("DD"));
 
 			buchstabe = 'D';
 			break;
 
 		case E:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("EI.PA"));
+			listGewaehlt.add(new AktieDef("ENGI.PA"));
+			listGewaehlt.add(new AktieDef("ENEL.MI"));
+			listGewaehlt.add(new AktieDef("ENI.MI"));
 
 			buchstabe = 'E';
 			break;
 
 		case F:
-			listGewaehlt.add(new AktieDef("ABBN"));
+			listGewaehlt.add(new AktieDef("FRE.DE"));
 			listGewaehlt.add(new AktieDef("ATLN"));
 			listGewaehlt.add(new AktieDef("ADEN"));
 			listGewaehlt.add(new AktieDef("ASCN"));
@@ -299,7 +299,7 @@ public class Anlageuniversum {
 			break;
 		}
 		
-		// Summe von aktien die gewählt wurde = Summe
+		// Summe von aktien die gewï¿½hlt wurde = Summe
 		BigDecimal summe = new BigDecimal("0");
 		
 		for (AktieDef item : listGewaehlt) {
@@ -319,8 +319,8 @@ public class Anlageuniversum {
 		System.out.println(anzPakete);
 		
 		
-		System.out.println("Sie haben sich für Anlagestrategie '" + buchstabe + "' entschieden");
-		System.out.println("Der Betrag für 1 Aktienpaket '" + buchstabe + "' ist: " + summe);
+		System.out.println("Sie haben sich fï¿½r Anlagestrategie '" + buchstabe + "' entschieden");
+		System.out.println("Der Betrag fï¿½r 1 Aktienpaket '" + buchstabe + "' ist: " + summe);
 		System.out.println();
 		System.out.println("Unser Vorschlag:");
 		System.out.println("[MODULO] Mal das Aktienpaket '" + buchstabe + "'");
@@ -329,11 +329,11 @@ public class Anlageuniversum {
 		
 		System.out.println();
 		System.out.println("Total Kosten Aktien: " + "[KOSTEN]*[MODULO]");
-		System.out.println("Ihr zur verfügung stehendes Kapital: "
+		System.out.println("Ihr zur verfï¿½gung stehendes Kapital: "
 				+ kunde.getKontoListe( ).get(0).getKapitalListe().get(0).getWaehrung() + " "
 				+ kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital());
 		System.out.println(
-				"Restbetrag auf Ihrem Konto nach Transaktion: " + "[getWährung + getKontostand] - [KOSTEN]*[MODULO]");
+				"Restbetrag auf Ihrem Konto nach Transaktion: " + "[getWï¿½hrung + getKontostand] - [KOSTEN]*[MODULO]");
 
 		System.out.println();
 		System.out.println("Einverstanden?");
