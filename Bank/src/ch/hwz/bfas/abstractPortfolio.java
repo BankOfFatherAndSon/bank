@@ -7,7 +7,7 @@ abstract public class abstractPortfolio {
 
 	Portfolio portfolio;
 	Aktie aktie;
-	AnlageuniversumDefinitiv anlageuniversumDefinitiv;
+	Anlageuniversum anlageuniversum;
 	
 	
 	

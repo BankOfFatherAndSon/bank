@@ -12,6 +12,7 @@ public class AktieDef {
 	
 	private String name;
 
+	//Konstruktor
 	public AktieDef(String name) {
 		Stock stock = null;
 		try {

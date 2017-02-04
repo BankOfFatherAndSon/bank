@@ -6,7 +6,7 @@ import java.util.List;
 public class Anlagevorschlag extends abstractPortfolio {
 
 	//get List from AnlageuniversumDef
-	AnlageuniversumDefinitiv anlageuniversumDefinitiv;
+	Anlageuniversum anlageuniversum;
 	
 	// Kapital abrufen
 	int getWertKapitalTest = 100; // - get Wert Kapital
@@ -23,7 +23,7 @@ public class Anlagevorschlag extends abstractPortfolio {
 		listeATimi.add("ADEN");
 		listeATimi.add("ASCN");
 		
-		anlageuniversumDefinitiv.getGewaehlteListe();
+		anlageuniversum.getGewaehlteListe();
 		
 		//Summe des Preises der Aktien in diesem Array ausrechnen
 		// TODO vielleicht String to Int

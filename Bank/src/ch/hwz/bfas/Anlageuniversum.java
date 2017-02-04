@@ -8,7 +8,7 @@ import java.util.List;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
-public class AnlageuniversumDefinitiv {
+public class Anlageuniversum {
 
 	public enum Anlage {
 		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
@@ -23,24 +23,24 @@ public class AnlageuniversumDefinitiv {
 	boolean einverstanden = false;
 
 	// Konstruktor
-	public AnlageuniversumDefinitiv(Anlage anlage, Kunde kunde) {
+	public Anlageuniversum(Anlage anlage, Kunde kunde) {
 		this.anlage = anlage;
 		this.kunde = kunde;
 	}
 
+	// Methoden	
 	public void einverstanden(boolean einverstanden){
 	this.einverstanden = einverstanden;
 	
-	// TODO einstellen dass der Klient auswï¿½hlen kann aber im Moment immer einverstanden
+	// TODO einstellen dass der Klient auswählen kann aber im Moment immer einverstanden
 	einverstanden = true;
 	
 	
 	if (einverstanden = true) {
-		System.out.println("braucht es diese Methode noch? einverstanden()");
 		annahme(listGewaehlt);
 		
 	} else {
-		// TODO Hier mï¿½sste nicht direkt auf anlage sonder auf auswahl des Kapitals fï¿½r selection verwiesen werden
+		// TODO Hier müsste nicht direkt auf anlage sonder auf auswahl des Kapitals für selection verwiesen werden
 		selection(anlage);
 	}
 	
@@ -303,30 +303,37 @@ public class AnlageuniversumDefinitiv {
 		BigDecimal summe = new BigDecimal("0");
 		
 		for (AktieDef item : listGewaehlt) {
-			System.out.println(item.getPrice());
+			//System.out.println(item. + item.getPrice());
 			
 		summe = summe.add(item.getPrice());
 		
 		
 		}
 		
-		System.out.println("Summe ist zB bei A " + summe);
+		int anzPakete = 0;
+		double kundenMoney = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital();
 		
-		System.out.println(Anlage.A);
-		System.out.println("Sie haben sich fï¿½r Anlagestrategie '" + buchstabe + "' entschieden");
-		System.out.println("Dies beinhaltet folgende Aktien: " + listGewaehlt);
-		System.out.println("Der Betrag fï¿½r 1 Aktienpaket ist: [KOSTEN]");
+		System.out.println(kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital());
+		anzPakete = (int) (kundenMoney / (int) summe);
+		//anzPakete = 5 / 2;
+		System.out.println(anzPakete);
+		
+		
+		System.out.println("Sie haben sich für Anlagestrategie '" + buchstabe + "' entschieden");
+		System.out.println("Der Betrag für 1 Aktienpaket '" + buchstabe + "' ist: " + summe);
 		System.out.println();
 		System.out.println("Unser Vorschlag:");
 		System.out.println("[MODULO] Mal das Aktienpaket '" + buchstabe + "'");
 
+		
+		
 		System.out.println();
 		System.out.println("Total Kosten Aktien: " + "[KOSTEN]*[MODULO]");
-		System.out.println("Ihr zur verfï¿½gung stehendes Kapital: "
+		System.out.println("Ihr zur verfügung stehendes Kapital: "
 				+ kunde.getKontoListe( ).get(0).getKapitalListe().get(0).getWaehrung() + " "
 				+ kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital());
 		System.out.println(
-				"Restbetrag auf Ihrem Konto nach Transaktion: " + "[getWï¿½hrung + getKontostand] - [KOSTEN]*[MODULO]");
+				"Restbetrag auf Ihrem Konto nach Transaktion: " + "[getWährung + getKontostand] - [KOSTEN]*[MODULO]");
 
 		System.out.println();
 		System.out.println("Einverstanden?");

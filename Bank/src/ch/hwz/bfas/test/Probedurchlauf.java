@@ -1,22 +1,16 @@
 package ch.hwz.bfas.test;
 
-import java.util.ArrayList;
-
-import ch.hwz.bfas.Aktie;
-import ch.hwz.bfas.AnlageuniversumDefinitiv;
-import ch.hwz.bfas.AnlageuniversumDefinitiv.Anlage;
-import ch.hwz.bfas.Anlagevorschlag;
-import ch.hwz.bfas.Depot;
+import ch.hwz.bfas.Anlageuniversum;
+import ch.hwz.bfas.Anlageuniversum.Anlage;
 import ch.hwz.bfas.Kapital;
 import ch.hwz.bfas.Konto;
 import ch.hwz.bfas.Kunde;
 import ch.hwz.bfas.Portfolio;
-import ch.hwz.bfas.abstractPortfolio;
 
 public class Probedurchlauf {
 	public static void main(String[] args) {
 
-		Kunde kunde;
+		/*Kunde kunde;
 		Konto konto;
 		Kapital kapital;
 
@@ -28,7 +22,7 @@ public class Probedurchlauf {
 
 		Depot depot;
 
-		AnlageuniversumDefinitiv anlageuniversumDefinitiv;
+		AnlageuniversumDefinitiv anlageuniversumDefinitiv;*/
 
 		// Kapital wird definiert
 		Kapital testKapital = new Kapital("CHF", 1000.0, true);
@@ -74,7 +68,7 @@ public class Probedurchlauf {
 
 		// Anlagevorschlag
 		System.err.println("Anlagevorschlag wird erstellt");
-		AnlageuniversumDefinitiv testVorschlag = new AnlageuniversumDefinitiv(Anlage.A, testKunde);
+		Anlageuniversum testVorschlag = new Anlageuniversum(Anlage.A, testKunde);
 		testVorschlag.setPortfolio(testPortfolio);
 		
 		System.out.println("Der Betrag ist sein Kontoguthaben (F�rs erste)");
