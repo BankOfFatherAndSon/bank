@@ -6,7 +6,9 @@ public class Kapital {
 	private double wertKapital;
 	private String waehrung;
 	private boolean einzahlungErfolgt;
-
+	
+	
+	
 	// Konstruktor
 
 	public Kapital(String waehrung, double wertKapital, boolean einzahlungErfolgt) {
@@ -16,6 +18,10 @@ public class Kapital {
 
 	}
 
+	//Methoden
+	
+
+	
 	
 	// GET & SET
 	public double getWertKapital() {

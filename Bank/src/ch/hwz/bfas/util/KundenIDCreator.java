@@ -5,14 +5,14 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class KontoIDCreator {
-
+public class KundenIDCreator {
+	
 	// Konstruktor
 	private static int nummer = 0;
-	private static String txt = "KontoIDNr.txt";
+	private static String txt = "KundenIDNr.txt";
 
 	//Generiert eine KontoIDNr die fortlaufend ist
-	public static void kontoIDCreator() {
+	public static void kundenIDCreator() {
 		try {
 			FileReader fr = new FileReader(txt);
 			BufferedReader br = new BufferedReader(fr);
@@ -33,7 +33,7 @@ public class KontoIDCreator {
 	
 
 	// Get/Set
-	public static int getKontoNummer() {
+	public static int getKundenNummer() {
 		return nummer;
 	}
 }

@@ -6,20 +6,33 @@ import java.util.List;
 public class Depot {
 
 	int depotnummer;
-	String anlagestrategie; // Instanzvariabel provisorisch, bis Rossi shit
-							// kommt
-	
 	private List<Portfolio> portfolioListe = new ArrayList<Portfolio>();
 
 	// Konstruktor
-	public Depot(String anlagestrategie, int depotnummer) {
-		this.anlagestrategie = anlagestrategie;
-		this.depotnummer = depotnummer; // DepotnummerCreator erstellen
+	public Depot(int depotnummer) {
+		this.depotnummer = depotnummer; // TODO DepotnummerCreator erstellen
 	}
 
-	
 	// Methoden
-		public void addPortfolio(Portfolio portfolio) {
-			portfolioListe.add(portfolio);
-}
+	public void addPortfolio(Portfolio portfolio) {
+		portfolioListe.add(portfolio);
+
+	}
+
+	// Get & Set
+	public int getDepotnummer() {
+		return depotnummer;
+	}
+
+	public void setDepotnummer(int depotnummer) {
+		this.depotnummer = depotnummer;
+	}
+
+	public List<Portfolio> getPortfolioListe() {
+		return portfolioListe;
+	}
+
+	public void setPortfolioListe(List<Portfolio> portfolioListe) {
+		this.portfolioListe = portfolioListe;
+	}
 }

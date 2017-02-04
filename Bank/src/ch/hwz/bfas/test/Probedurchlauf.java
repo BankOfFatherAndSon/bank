@@ -1,6 +1,7 @@
 package ch.hwz.bfas.test;
 
 import ch.hwz.bfas.Anlageuniversum;
+import ch.hwz.bfas.Depot;
 import ch.hwz.bfas.Anlageuniversum.Anlage;
 import ch.hwz.bfas.Kapital;
 import ch.hwz.bfas.Konto;
@@ -64,7 +65,15 @@ public class Probedurchlauf {
 		System.out.println();
 
 		// Portfolio initialisieren
+		System.err.println("Portfolio wird initialisiert..");
+		System.out.println();
 		Portfolio testPortfolio = new Portfolio();
+		
+		// Depot initialisieren
+		System.err.println("Depot wird initialisiert..");
+		System.out.println();
+		Depot testDepot = new Depot(1);
+		
 
 		// Anlagevorschlag
 		System.err.println("Anlagevorschlag wird erstellt");
@@ -78,15 +87,12 @@ public class Probedurchlauf {
 		System.err.println("Text selection():");
 		testVorschlag.selection(Anlage.A);
 
+		// Portfolio zu Depot
 		System.out.println();
-		System.err.println("HELLO");
-
+		System.err.println("Das Portfolio wird dem Depot zugewiesen");
+		testDepot.addPortfolio(testPortfolio);
 		
-
-		//testVorschlag.annahme((ArrayList<String>) testVorschlag.getListGewaehlt());
-		// System.out.println(testVorschlag.getListGewaehlt());
-
-		System.out.println(testVorschlag.getListGewaehlt());
+		System.out.println(testDepot.getPortfolioListe());
 
 	}
 }

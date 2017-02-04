@@ -32,7 +32,7 @@ public class Anlageuniversum {
 	public void einverstanden(boolean einverstanden){
 	this.einverstanden = einverstanden;
 	
-	// TODO einstellen dass der Klient auswï¿½hlen kann aber im Moment immer einverstanden
+	// TODO einstellen dass der Klient auswählen kann aber im Moment immer einverstanden
 	einverstanden = true;
 	
 	
@@ -40,7 +40,7 @@ public class Anlageuniversum {
 		annahme(listGewaehlt);
 		
 	} else {
-		// TODO Hier mï¿½sste nicht direkt auf anlage sonder auf auswahl des Kapitals fï¿½r selection verwiesen werden
+		// TODO Hier müsste nicht direkt auf anlage sonder auf auswahl des Kapitals für selection verwiesen werden
 		selection(anlage);
 	}
 	
@@ -54,7 +54,7 @@ public class Anlageuniversum {
 
 	public void selection(Anlage anlage) {
 		
-		// Jedse Mal bei methode zuerst zurï¿½ckgesetzt
+		// Jedse Mal bei methode zuerst zurückgesetzt
 		listGewaehlt = new ArrayList<>();
 
 		switch (anlage) {
@@ -299,7 +299,7 @@ public class Anlageuniversum {
 			break;
 		}
 		
-		// Summe von aktien die gewï¿½hlt wurde = Summe
+		// Summe von aktien die gewählt wurde = Summe
 		BigDecimal summe = new BigDecimal("0");
 		
 		for (AktieDef item : listGewaehlt) {
@@ -310,31 +310,28 @@ public class Anlageuniversum {
 		
 		}
 		
-		int anzPakete = 0;
-		double kundenMoney = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital();
+		// Neu benötigte Variabeln
+		String kuWaehrung = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWaehrung();
+		double kuKapital = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital();
+		int anzPakete = (int) (kuKapital / summe.doubleValue());
+		double totKostenAktien = anzPakete * summe.doubleValue();
+		double restKonto = kuKapital - totKostenAktien;
 		
-		System.out.println(kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital());
-		anzPakete = (int) (kundenMoney / (int) summe);
-		//anzPakete = 5 / 2;
-		System.out.println(anzPakete);
 		
-		
-		System.out.println("Sie haben sich fï¿½r Anlagestrategie '" + buchstabe + "' entschieden");
-		System.out.println("Der Betrag fï¿½r 1 Aktienpaket '" + buchstabe + "' ist: " + summe);
+		// Console Output
+		System.out.println();
+		System.out.println("Sie haben sich für Anlagestrategie '" + buchstabe + "' entschieden");
+		System.out.println("Der Betrag für 1 Aktienpaket '" + buchstabe + "' ist: " + kuWaehrung + " " + summe);
 		System.out.println();
 		System.out.println("Unser Vorschlag:");
-		System.out.println("[MODULO] Mal das Aktienpaket '" + buchstabe + "'");
+		System.out.println(anzPakete + " Mal das Aktienpaket '" + buchstabe + "'");
 
 		
 		
 		System.out.println();
-		System.out.println("Total Kosten Aktien: " + "[KOSTEN]*[MODULO]");
-		System.out.println("Ihr zur verfï¿½gung stehendes Kapital: "
-				+ kunde.getKontoListe( ).get(0).getKapitalListe().get(0).getWaehrung() + " "
-				+ kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital());
-		System.out.println(
-				"Restbetrag auf Ihrem Konto nach Transaktion: " + "[getWï¿½hrung + getKontostand] - [KOSTEN]*[MODULO]");
-
+		System.out.println("Total Kosten Aktien: " + totKostenAktien);
+		System.out.println("Ihr zur verfügung stehendes Kapital: " + kuWaehrung + " " + kuKapital);
+		System.out.println("Restbetrag auf Ihrem Konto nach Transaktion: " + kuWaehrung + " " + restKonto);
 		System.out.println();
 		System.out.println("Einverstanden?");
 		einverstanden(einverstanden);
@@ -356,7 +353,7 @@ public class Anlageuniversum {
 		this.listGewaehlt = listGewaehlt;
 		
 		portfolio.setPortfolioList(listGewaehlt);
-		System.out.println("Annahme funktioniert!");
+		System.err.println("Annahme funktioniert!");
 	}
 	
 	
