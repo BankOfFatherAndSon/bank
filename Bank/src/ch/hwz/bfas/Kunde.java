@@ -19,7 +19,7 @@ public class Kunde {
 
 	static Scanner eingabe = new Scanner(System.in);
 	private static char kundenEntry;
-
+ 
 	// Benötige Konstruktor mit allen Infos
 	public Kunde(int kundennummer, String vorname, String name, String email, String adresse, String telefonnummer) {
 		this.kundennummer = kundennummer;
