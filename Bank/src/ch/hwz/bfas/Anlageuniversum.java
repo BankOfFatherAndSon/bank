@@ -32,7 +32,7 @@ public class Anlageuniversum {
 	public void einverstanden(boolean einverstanden){
 	this.einverstanden = einverstanden;
 	
-	// TODO einstellen dass der Klient auswählen kann aber im Moment immer einverstanden
+	// TODO einstellen dass der Klient auswï¿½hlen kann aber im Moment immer einverstanden
 	einverstanden = true;
 	
 	
@@ -40,7 +40,7 @@ public class Anlageuniversum {
 		annahme(listGewaehlt);
 		
 	} else {
-		// TODO Hier müsste nicht direkt auf anlage sonder auf auswahl des Kapitals für selection verwiesen werden
+		// TODO Hier mï¿½sste nicht direkt auf anlage sonder auf auswahl des Kapitals fï¿½r selection verwiesen werden
 		selection(anlage);
 	}
 	
@@ -54,7 +54,7 @@ public class Anlageuniversum {
 
 	public void selection(Anlage anlage) {
 		
-		// Jedse Mal bei methode zuerst zurückgesetzt
+		// Jedse Mal bei methode zuerst zurï¿½ckgesetzt
 		listGewaehlt = new ArrayList<>();
 
 		switch (anlage) {
@@ -110,18 +110,18 @@ public class Anlageuniversum {
 
 		case F:
 			listGewaehlt.add(new AktieDef("FRE.DE"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("FRTA"));
+			listGewaehlt.add(new AktieDef("FARO"));
+			listGewaehlt.add(new AktieDef("FRE.DE"));
 
 			buchstabe = 'F';
 			break;
 
 		case G:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("G.MI"));
+			listGewaehlt.add(new AktieDef("GS"));
+			listGewaehlt.add(new AktieDef("GBRA.F"));
+			listGewaehlt.add(new AktieDef("8GC.F"));
 
 			buchstabe = 'G';
 			break;
@@ -136,54 +136,52 @@ public class Anlageuniversum {
 			break;
 
 		case I:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("IBKC"));
+			listGewaehlt.add(new AktieDef("ISLE"));
+			listGewaehlt.add(new AktieDef("INTC"));
+			listGewaehlt.add(new AktieDef("IBM"));
 			buchstabe = 'I';
 			break;
 
 		case J:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("JNJ"));
+			listGewaehlt.add(new AktieDef("JIVE"));
+			listGewaehlt.add(new AktieDef("BAER.VX"));
 
 			buchstabe = 'J';
 			break;
 
 		case K:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("KO"));
+			listGewaehlt.add(new AktieDef("KLXI"));
+			listGewaehlt.add(new AktieDef("KELYA"));
+			listGewaehlt.add(new AktieDef("K"));
 
 			buchstabe = 'K';
 			break;
 
 		case L:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("HCMLY"));
+			listGewaehlt.add(new AktieDef("LIN.DE"));
+			listGewaehlt.add(new AktieDef("LHA.DE"));
+			listGewaehlt.add(new AktieDef("LINN.SW"));
 
 			buchstabe = 'L';
 			break;
 
 		case M:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
-
+			listGewaehlt.add(new AktieDef("MUV2.DE"));
+			listGewaehlt.add(new AktieDef("MMM"));
+			listGewaehlt.add(new AktieDef("MDC.L"));
+			
 			buchstabe = 'M';
 			break;
 
 		case N:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("NVS"));
+			listGewaehlt.add(new AktieDef("NSRGY"));
+			listGewaehlt.add(new AktieDef("NKE"));
+			listGewaehlt.add(new AktieDef("NOKIA.HE"));
 
 			buchstabe = 'N';
 			break;
@@ -299,7 +297,7 @@ public class Anlageuniversum {
 			break;
 		}
 		
-		// Summe von aktien die gewählt wurde = Summe
+		// Summe von aktien die gewï¿½hlt wurde = Summe
 		BigDecimal summe = new BigDecimal("0");
 		
 		for (AktieDef item : listGewaehlt) {
@@ -310,7 +308,7 @@ public class Anlageuniversum {
 		
 		}
 		
-		// Neu benötigte Variabeln
+		// Neu benï¿½tigte Variabeln
 		String kuWaehrung = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWaehrung();
 		double kuKapital = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital();
 		int anzPakete = (int) (kuKapital / summe.doubleValue());
@@ -320,8 +318,8 @@ public class Anlageuniversum {
 		
 		// Console Output
 		System.out.println();
-		System.out.println("Sie haben sich für Anlagestrategie '" + buchstabe + "' entschieden");
-		System.out.println("Der Betrag für 1 Aktienpaket '" + buchstabe + "' ist: " + kuWaehrung + " " + summe);
+		System.out.println("Sie haben sich fï¿½r Anlagestrategie '" + buchstabe + "' entschieden");
+		System.out.println("Der Betrag fï¿½r 1 Aktienpaket '" + buchstabe + "' ist: " + kuWaehrung + " " + summe);
 		System.out.println();
 		System.out.println("Unser Vorschlag:");
 		System.out.println(anzPakete + " Mal das Aktienpaket '" + buchstabe + "'");
@@ -330,7 +328,7 @@ public class Anlageuniversum {
 		
 		System.out.println();
 		System.out.println("Total Kosten Aktien: " + totKostenAktien);
-		System.out.println("Ihr zur verfügung stehendes Kapital: " + kuWaehrung + " " + kuKapital);
+		System.out.println("Ihr zur verfï¿½gung stehendes Kapital: " + kuWaehrung + " " + kuKapital);
 		System.out.println("Restbetrag auf Ihrem Konto nach Transaktion: " + kuWaehrung + " " + restKonto);
 		System.out.println();
 		System.out.println("Einverstanden?");
