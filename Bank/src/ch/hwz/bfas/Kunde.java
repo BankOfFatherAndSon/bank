@@ -15,7 +15,7 @@ public class Kunde {
 
 	private static List<Kunde> kundenListe = new ArrayList<Kunde>();
 	private List<Konto> kontoListe = new ArrayList<Konto>();
-	private List<Depot> depotListe = new ArrayList<Depot>();
+	private static List<Depot> depotListe = new ArrayList<Depot>();
 
 	static Scanner eingabe = new Scanner(System.in);
 	private static char kundenEntry;
@@ -31,16 +31,53 @@ public class Kunde {
 	}
 
 	// Methoden
+	public void addKunde(Kunde kunde) {
+		kundenListe.add(kunde);
+	}
+	
 	public void addKonto(Konto konto) {
 		kontoListe.add(konto);
 	}
 
-	public void addDepot(Depot depot) {
+	public static void createDepot() {
 		/*
 		 * Muss programmiert werden: Programm soll folgende Attribute auf ihre
 		 * Korrektheit kontrollieren: email, adresse, telefonnummer
 		 */
 
+		System.out.print("Geben Sie die Kundennummer ein: ");
+		int i = eingabe.nextInt();
+		
+		if (kundenListe.contains(i)) {
+		    System.out.println("Account found");
+		} else {
+		    System.out.println("Account not found");
+		}
+	
+		
+		System.out.println("Kundendatenüberprüfen");
+	}
+		
+	public static void addDepot(Depot depot) {
+		/*
+		 * Muss programmiert werden: Programm soll folgende Attribute auf ihre
+		 * Korrektheit kontrollieren: email, adresse, telefonnummer
+		 */
+
+		System.out.print("Geben Sie die Kundennummer ein: ");
+		int i = eingabe.nextInt();
+		
+		if (kundenListe.contains(i)) {
+		    System.out.println("Account found");
+		} else {
+		    System.out.println("Account not found");
+		}
+		
+		
+		System.out.println("Kundendatenüberprüfen");
+		
+		
+		
 		// (OK) 2. hinzufügen des Depots
 		depotListe.add(depot);
 	}
@@ -208,4 +245,13 @@ public class Kunde {
 		this.depotListe = depotListe;
 	}
 
+	public static List<Kunde> getKundenListe() {
+		return kundenListe;
+	}
+
+	public static void setKundenListe(List<Kunde> kundenListe) {
+		Kunde.kundenListe = kundenListe;
+	}
+
+	
 }

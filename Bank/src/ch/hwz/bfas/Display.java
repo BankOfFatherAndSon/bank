@@ -1,5 +1,7 @@
 package ch.hwz.bfas;
 
+import ch.hwz.bfas.util.KundenIDCreator;
+
 public class Display {
 	public static void main(String[] args) {
 
@@ -9,12 +11,23 @@ public class Display {
 		
 		System.out.println("Guten Tag");
 		
-		// Kunde
-		Kunde.kundenEingabe();
-
+		// Test Kunde
+		/*Kunde tKunde = new Kunde(1000, "Timi", "Osoko", "timimail", "timiadress", "0213023");
+		Konto tKonto = new Konto(2001);
+		Kapital tKapital = new Kapital("CHF", 4000.0, true);
+			
+		tKunde.addKonto(tKonto);
+		tKunde.getKontoListe().get(0).addKapital(tKapital);
 		
-		// Konto
-		//Konto.kontoEingabe();
+		Kunde.getKundenListe().add(tKunde);*/
+		
+		// Eingabe aller Informationen neu
+		Kunde.kundenEingabe(); //OK!
+		
+		// Depot eröffnung
+		Kunde.createDepot();
+
+	
 
 		
 	}

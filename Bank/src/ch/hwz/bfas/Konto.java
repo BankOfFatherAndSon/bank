@@ -21,7 +21,7 @@ public class Konto {
 	public Konto(int kontoNr) {
 		this.kontoNr = kontoNr;
 	}
-
+	
 	// Methoden
 	public void addKapital(Kapital kapital1) {
 		kapitalListe.add(kapital1);
@@ -81,7 +81,7 @@ public class Konto {
 			
 		}}
 
-		public static void frageKapital(){
+	public static void frageKapital(){
 
 			System.out.println("j = Ja | n = Nein");
 			System.out.println();
