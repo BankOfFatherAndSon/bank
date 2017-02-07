@@ -187,114 +187,108 @@ public class Anlageuniversum {
 			break;
 
 		case O:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
-
+			listGewaehlt.add(new AktieDef("OR.PA"));
+			listGewaehlt.add(new AktieDef("OPTT"));
+			listGewaehlt.add(new AktieDef("ORBK"));
+			
 			buchstabe = 'O';
 			break;
 
 		case P:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("PFE"));
+			listGewaehlt.add(new AktieDef("PEP"));
+			listGewaehlt.add(new AktieDef("PG"));
 
 			buchstabe = 'P';
 			break;
 
 		case Q:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("QTNA"));
+			listGewaehlt.add(new AktieDef("QUAD"));
+			listGewaehlt.add(new AktieDef("QST.V"));
 
 			buchstabe = 'Q';
 			break;
 
 		case R:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("ROG.VX"));
+			listGewaehlt.add(new AktieDef("CFR.VX"));
+			listGewaehlt.add(new AktieDef("RWE.DE"));
+			
 
 			buchstabe = 'R';
 			break;
 
 		case S:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("SCMN.VX"));
+			listGewaehlt.add(new AktieDef("SLHN.VX"));
+			listGewaehlt.add(new AktieDef("SYT"));
+			listGewaehlt.add(new AktieDef("UHR.VX"));
 
 			buchstabe = 'S';
 			break;
 
 		case T:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("TSLA"));
+			listGewaehlt.add(new AktieDef("TSCO.L"));
+			listGewaehlt.add(new AktieDef("TUI.L"));
+			listGewaehlt.add(new AktieDef("TKA.DE"));
 
 			buchstabe = 'T';
 			break;
 
 		case U:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("UNH"));
+			listGewaehlt.add(new AktieDef("UTX"));
+			listGewaehlt.add(new AktieDef("UBS"));
+			listGewaehlt.add(new AktieDef("ULTA"));
 
 			buchstabe = 'U';
 			break;
 
 		case V:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("VOW.F"));
+			listGewaehlt.add(new AktieDef("VOD.L"));
+			listGewaehlt.add(new AktieDef("VZ"));
 
 			buchstabe = 'V';
 			break;
 
 		case W:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("WPG.L"));
+			listGewaehlt.add(new AktieDef("WFC"));
+			listGewaehlt.add(new AktieDef("WWE"));
 
 			buchstabe = 'W';
 			break;
 
 		case X:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("X"));
+			listGewaehlt.add(new AktieDef("XOM"));
+			listGewaehlt.add(new AktieDef("XXL.OL"));
 
 			buchstabe = 'X';
 			break;
 
 		case Y:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
+			listGewaehlt.add(new AktieDef("YELP"));
+			listGewaehlt.add(new AktieDef("YHOO"));
+			listGewaehlt.add(new AktieDef("YELP"));
+			listGewaehlt.add(new AktieDef("YRCW"));
 
 			buchstabe = 'Y';
 			break;
 
 		case Z:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));
-
+			listGewaehlt.add(new AktieDef("ZURN.VX"));
+			listGewaehlt.add(new AktieDef("ZNGA"));
+			listGewaehlt.add(new AktieDef("ZAL.OL"));
 			buchstabe = 'Z';
 			break;
 		default:
 			break;
+
+
 		}
 		
 		// Summe von aktien die gew�hlt wurde = Summe
