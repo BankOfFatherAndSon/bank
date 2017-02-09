@@ -25,7 +25,7 @@ public class Probedurchlauf {
 		System.out.println();
 
 		// Kunde wird definiert
-		Kunde testKunde = new Kunde(99, "Max", "Muster", "max.muster@gmail.com", "Musterweg 20, 8001 Zï¿½rich",
+		Kunde testKunde = new Kunde(99, "Max", "Muster", "max.muster@gmail.com", "Musterweg 20, 8001 Zürich",
 				"076/400/20/50");
 		System.err.println("Die Infos des " + testKunde.getClass().getSimpleName() + "ns:");
 		System.out.println("Kundennummer: " + testKunde.getKundennummer());
@@ -66,8 +66,8 @@ public class Probedurchlauf {
 		Anlageuniversum testVorschlag = new Anlageuniversum(Anlage.A, testKunde);
 		testVorschlag.setPortfolio(testPortfolio);
 		
-		System.out.println("Der Betrag ist sein Kontoguthaben (Fï¿½rs erste)");
-		System.out.println("Kunde entscheidet sich fï¿½r Anlageplan 'A'");
+		System.out.println("Der Betrag ist sein Kontoguthaben (Fürs erste)");
+		System.out.println("Kunde entscheidet sich für Anlageplan 'A'");
 		System.out.println("Text aus Methode selection() folgt unten:");
 		System.out.println();
 		System.err.println("Text selection():");
