@@ -4,17 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Portfolio extends abstractPortfolio {
-
-	
 	
 	private int portfolioID = 1;
-	private List<AktieDef> portfolioList = new ArrayList<>();
-
-	
-	
-	
-	
-	
+	private List<Aktie> portfolioList = new ArrayList<>();	
 	
 	// Get und Set
 	public int getPortfolioID() {
@@ -25,11 +17,11 @@ public class Portfolio extends abstractPortfolio {
 		this.portfolioID = portfolioID;
 	}
 
-	public List<AktieDef> getPortfolioList() {
+	public List<Aktie> getPortfolioList() {
 		return portfolioList;
 	}
 
-	public void setPortfolioList(List<AktieDef> listGewaehlt) {
+	public void setPortfolioList(List<Aktie> listGewaehlt) {
 		this.portfolioList = listGewaehlt;
 	}
 	

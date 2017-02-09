@@ -8,14 +8,14 @@ import java.util.List;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 
-public class Anlageuniversum {
+public class Anlageuniversum extends abstractPortfolio {
 
 	public enum Anlage {
 		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
 
 	}
 
-	private List<AktieDef> listGewaehlt = new ArrayList<>();
+	private List<Aktie> listGewaehlt = new ArrayList<>();
 	char buchstabe;
 	private Portfolio portfolio;
 	Anlage anlage;
@@ -32,7 +32,8 @@ public class Anlageuniversum {
 	public void einverstanden(boolean einverstanden){
 	this.einverstanden = einverstanden;
 	
-	// TODO einstellen dass der Klient auswï¿½hlen kann aber im Moment immer einverstanden
+	// TODO einstellen dass der Klient auswählen kann aber im Moment immer einverstanden
+	
 	einverstanden = true;
 	
 	
@@ -40,30 +41,29 @@ public class Anlageuniversum {
 		annahme(listGewaehlt);
 		
 	} else {
-		// TODO Hier mï¿½sste nicht direkt auf anlage sonder auf auswahl des Kapitals fï¿½r selection verwiesen werden
+		// TODO Hier müsste nicht direkt auf anlage sonder auf auswahl des Kapitals für selection verwiesen werden
 		selection(anlage);
 	}
 	
 	}
-	
-	
-	private void annahme(ArrayList<AktieDef> listGewaehlt2) {
+		
+	private void annahme(ArrayList<Aktie> listGewaehlt2) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	public void selection(Anlage anlage) {
 		
-		// Jedse Mal bei methode zuerst zurï¿½ckgesetzt
+		// Jedse Mal bei methode zuerst zurückgesetzt
 		listGewaehlt = new ArrayList<>();
 
 		switch (anlage) {
 		case A:
 
-			listGewaehlt.add(new AktieDef("AI.PA"));
-			listGewaehlt.add(new AktieDef("AIR.PA"));
-			listGewaehlt.add(new AktieDef("ALV.DE"));
-			listGewaehlt.add(new AktieDef("ABI.BR"));
+			listGewaehlt.add(new Aktie("AI.PA"));
+			listGewaehlt.add(new Aktie("AIR.PA"));
+			listGewaehlt.add(new Aktie("ALV.DE"));
+			listGewaehlt.add(new Aktie("ABI.BR"));
 
 			buchstabe = 'A';
 
@@ -72,217 +72,217 @@ public class Anlageuniversum {
 
 		case B:
 
-			listGewaehlt.add(new AktieDef("BMW.DE"));
-			listGewaehlt.add(new AktieDef("BAYN.DE"));
-			listGewaehlt.add(new AktieDef("BNP.PA"));
-			listGewaehlt.add(new AktieDef("BBVA.MC"));
+			listGewaehlt.add(new Aktie("BMW.DE"));
+			listGewaehlt.add(new Aktie("BAYN.DE"));
+			listGewaehlt.add(new Aktie("BNP.PA"));
+			listGewaehlt.add(new Aktie("BBVA.MC"));
 
 			buchstabe = 'B';
 
 			break;
 
 		case C:
-			listGewaehlt.add(new AktieDef("CA.PA"));
-			listGewaehlt.add(new AktieDef("CSCO"));
-			listGewaehlt.add(new AktieDef("CVX"));
-			listGewaehlt.add(new AktieDef("CS"));
+			listGewaehlt.add(new Aktie("CA.PA"));
+			listGewaehlt.add(new Aktie("CSCO"));
+			listGewaehlt.add(new Aktie("CVX"));
+			listGewaehlt.add(new Aktie("CS"));
 
 			buchstabe = 'C';
 			break;
 
 		case D:
-			listGewaehlt.add(new AktieDef("DPW.DE"));
-			listGewaehlt.add(new AktieDef("DTE.DE"));
-			listGewaehlt.add(new AktieDef("DBK.DE"));
-			listGewaehlt.add(new AktieDef("DD"));
+			listGewaehlt.add(new Aktie("DPW.DE"));
+			listGewaehlt.add(new Aktie("DTE.DE"));
+			listGewaehlt.add(new Aktie("DBK.DE"));
+			listGewaehlt.add(new Aktie("DD"));
 
 			buchstabe = 'D';
 			break;
 
 		case E:
-			listGewaehlt.add(new AktieDef("EI.PA"));
-			listGewaehlt.add(new AktieDef("ENGI.PA"));
-			listGewaehlt.add(new AktieDef("ENEL.MI"));
-			listGewaehlt.add(new AktieDef("ENI.MI"));
+			listGewaehlt.add(new Aktie("EI.PA"));
+			listGewaehlt.add(new Aktie("ENGI.PA"));
+			listGewaehlt.add(new Aktie("ENEL.MI"));
+			listGewaehlt.add(new Aktie("ENI.MI"));
 
 			buchstabe = 'E';
 			break;
 
 		case F:
-			listGewaehlt.add(new AktieDef("FRE.DE"));
-			listGewaehlt.add(new AktieDef("FRTA"));
-			listGewaehlt.add(new AktieDef("FARO"));
-			listGewaehlt.add(new AktieDef("FRE.DE"));
+			listGewaehlt.add(new Aktie("FRE.DE"));
+			listGewaehlt.add(new Aktie("FRTA"));
+			listGewaehlt.add(new Aktie("FARO"));
+			listGewaehlt.add(new Aktie("FRE.DE"));
 
 			buchstabe = 'F';
 			break;
 
 		case G:
-			listGewaehlt.add(new AktieDef("G.MI"));
-			listGewaehlt.add(new AktieDef("GS"));
-			listGewaehlt.add(new AktieDef("GBRA.F"));
-			listGewaehlt.add(new AktieDef("8GC.F"));
+			listGewaehlt.add(new Aktie("G.MI"));
+			listGewaehlt.add(new Aktie("GS"));
+			listGewaehlt.add(new Aktie("GBRA.F"));
+			listGewaehlt.add(new Aktie("8GC.F"));
 
 			buchstabe = 'G';
 			break;
 
 		case H:
-			listGewaehlt.add(new AktieDef("ABBN"));
-			listGewaehlt.add(new AktieDef("ATLN"));
-			listGewaehlt.add(new AktieDef("ADEN"));
-			listGewaehlt.add(new AktieDef("ASCN"));;
+			listGewaehlt.add(new Aktie("ABBN"));
+			listGewaehlt.add(new Aktie("ATLN"));
+			listGewaehlt.add(new Aktie("ADEN"));
+			listGewaehlt.add(new Aktie("ASCN"));;
 
 			buchstabe = 'H';
 			break;
 
 		case I:
-			listGewaehlt.add(new AktieDef("IBKC"));
-			listGewaehlt.add(new AktieDef("ISLE"));
-			listGewaehlt.add(new AktieDef("INTC"));
-			listGewaehlt.add(new AktieDef("IBM"));
+			listGewaehlt.add(new Aktie("IBKC"));
+			listGewaehlt.add(new Aktie("ISLE"));
+			listGewaehlt.add(new Aktie("INTC"));
+			listGewaehlt.add(new Aktie("IBM"));
 			buchstabe = 'I';
 			break;
 
 		case J:
-			listGewaehlt.add(new AktieDef("JNJ"));
-			listGewaehlt.add(new AktieDef("JIVE"));
-			listGewaehlt.add(new AktieDef("BAER.VX"));
+			listGewaehlt.add(new Aktie("JNJ"));
+			listGewaehlt.add(new Aktie("JIVE"));
+			listGewaehlt.add(new Aktie("BAER.VX"));
 
 			buchstabe = 'J';
 			break;
 
 		case K:
-			listGewaehlt.add(new AktieDef("KO"));
-			listGewaehlt.add(new AktieDef("KLXI"));
-			listGewaehlt.add(new AktieDef("KELYA"));
-			listGewaehlt.add(new AktieDef("K"));
+			listGewaehlt.add(new Aktie("KO"));
+			listGewaehlt.add(new Aktie("KLXI"));
+			listGewaehlt.add(new Aktie("KELYA"));
+			listGewaehlt.add(new Aktie("K"));
 
 			buchstabe = 'K';
 			break;
 
 		case L:
-			listGewaehlt.add(new AktieDef("HCMLY"));
-			listGewaehlt.add(new AktieDef("LIN.DE"));
-			listGewaehlt.add(new AktieDef("LHA.DE"));
-			listGewaehlt.add(new AktieDef("LINN.SW"));
+			listGewaehlt.add(new Aktie("HCMLY"));
+			listGewaehlt.add(new Aktie("LIN.DE"));
+			listGewaehlt.add(new Aktie("LHA.DE"));
+			listGewaehlt.add(new Aktie("LINN.SW"));
 
 			buchstabe = 'L';
 			break;
 
 		case M:
-			listGewaehlt.add(new AktieDef("MUV2.DE"));
-			listGewaehlt.add(new AktieDef("MMM"));
-			listGewaehlt.add(new AktieDef("MDC.L"));
+			listGewaehlt.add(new Aktie("MUV2.DE"));
+			listGewaehlt.add(new Aktie("MMM"));
+			listGewaehlt.add(new Aktie("MDC.L"));
 			
 			buchstabe = 'M';
 			break;
 
 		case N:
-			listGewaehlt.add(new AktieDef("NVS"));
-			listGewaehlt.add(new AktieDef("NSRGY"));
-			listGewaehlt.add(new AktieDef("NKE"));
-			listGewaehlt.add(new AktieDef("NOKIA.HE"));
+			listGewaehlt.add(new Aktie("NVS"));
+			listGewaehlt.add(new Aktie("NSRGY"));
+			listGewaehlt.add(new Aktie("NKE"));
+			listGewaehlt.add(new Aktie("NOKIA.HE"));
 
 			buchstabe = 'N';
 			break;
 
 		case O:
-			listGewaehlt.add(new AktieDef("OR.PA"));
-			listGewaehlt.add(new AktieDef("OPTT"));
-			listGewaehlt.add(new AktieDef("ORBK"));
+			listGewaehlt.add(new Aktie("OR.PA"));
+			listGewaehlt.add(new Aktie("OPTT"));
+			listGewaehlt.add(new Aktie("ORBK"));
 			
 			buchstabe = 'O';
 			break;
 
 		case P:
-			listGewaehlt.add(new AktieDef("PFE"));
-			listGewaehlt.add(new AktieDef("PEP"));
-			listGewaehlt.add(new AktieDef("PG"));
+			listGewaehlt.add(new Aktie("PFE"));
+			listGewaehlt.add(new Aktie("PEP"));
+			listGewaehlt.add(new Aktie("PG"));
 
 			buchstabe = 'P';
 			break;
 
 		case Q:
-			listGewaehlt.add(new AktieDef("QTNA"));
-			listGewaehlt.add(new AktieDef("QUAD"));
-			listGewaehlt.add(new AktieDef("QST.V"));
+			listGewaehlt.add(new Aktie("QTNA"));
+			listGewaehlt.add(new Aktie("QUAD"));
+			listGewaehlt.add(new Aktie("QST.V"));
 
 			buchstabe = 'Q';
 			break;
 
 		case R:
-			listGewaehlt.add(new AktieDef("ROG.VX"));
-			listGewaehlt.add(new AktieDef("CFR.VX"));
-			listGewaehlt.add(new AktieDef("RWE.DE"));
+			listGewaehlt.add(new Aktie("ROG.VX"));
+			listGewaehlt.add(new Aktie("CFR.VX"));
+			listGewaehlt.add(new Aktie("RWE.DE"));
 			
 
 			buchstabe = 'R';
 			break;
 
 		case S:
-			listGewaehlt.add(new AktieDef("SCMN.VX"));
-			listGewaehlt.add(new AktieDef("SLHN.VX"));
-			listGewaehlt.add(new AktieDef("SYT"));
-			listGewaehlt.add(new AktieDef("UHR.VX"));
+			listGewaehlt.add(new Aktie("SCMN.VX"));
+			listGewaehlt.add(new Aktie("SLHN.VX"));
+			listGewaehlt.add(new Aktie("SYT"));
+			listGewaehlt.add(new Aktie("UHR.VX"));
 
 			buchstabe = 'S';
 			break;
 
 		case T:
-			listGewaehlt.add(new AktieDef("TSLA"));
-			listGewaehlt.add(new AktieDef("TSCO.L"));
-			listGewaehlt.add(new AktieDef("TUI.L"));
-			listGewaehlt.add(new AktieDef("TKA.DE"));
+			listGewaehlt.add(new Aktie("TSLA"));
+			listGewaehlt.add(new Aktie("TSCO.L"));
+			listGewaehlt.add(new Aktie("TUI.L"));
+			listGewaehlt.add(new Aktie("TKA.DE"));
 
 			buchstabe = 'T';
 			break;
 
 		case U:
-			listGewaehlt.add(new AktieDef("UNH"));
-			listGewaehlt.add(new AktieDef("UTX"));
-			listGewaehlt.add(new AktieDef("UBS"));
-			listGewaehlt.add(new AktieDef("ULTA"));
+			listGewaehlt.add(new Aktie("UNH"));
+			listGewaehlt.add(new Aktie("UTX"));
+			listGewaehlt.add(new Aktie("UBS"));
+			listGewaehlt.add(new Aktie("ULTA"));
 
 			buchstabe = 'U';
 			break;
 
 		case V:
-			listGewaehlt.add(new AktieDef("VOW.F"));
-			listGewaehlt.add(new AktieDef("VOD.L"));
-			listGewaehlt.add(new AktieDef("VZ"));
+			listGewaehlt.add(new Aktie("VOW.F"));
+			listGewaehlt.add(new Aktie("VOD.L"));
+			listGewaehlt.add(new Aktie("VZ"));
 
 			buchstabe = 'V';
 			break;
 
 		case W:
-			listGewaehlt.add(new AktieDef("WPG.L"));
-			listGewaehlt.add(new AktieDef("WFC"));
-			listGewaehlt.add(new AktieDef("WWE"));
+			listGewaehlt.add(new Aktie("WPG.L"));
+			listGewaehlt.add(new Aktie("WFC"));
+			listGewaehlt.add(new Aktie("WWE"));
 
 			buchstabe = 'W';
 			break;
 
 		case X:
-			listGewaehlt.add(new AktieDef("X"));
-			listGewaehlt.add(new AktieDef("XOM"));
-			listGewaehlt.add(new AktieDef("XXL.OL"));
+			listGewaehlt.add(new Aktie("X"));
+			listGewaehlt.add(new Aktie("XOM"));
+			listGewaehlt.add(new Aktie("XXL.OL"));
 
 			buchstabe = 'X';
 			break;
 
 		case Y:
-			listGewaehlt.add(new AktieDef("YELP"));
-			listGewaehlt.add(new AktieDef("YHOO"));
-			listGewaehlt.add(new AktieDef("YELP"));
-			listGewaehlt.add(new AktieDef("YRCW"));
+			listGewaehlt.add(new Aktie("YELP"));
+			listGewaehlt.add(new Aktie("YHOO"));
+			listGewaehlt.add(new Aktie("YELP"));
+			listGewaehlt.add(new Aktie("YRCW"));
 
 			buchstabe = 'Y';
 			break;
 
 		case Z:
-			listGewaehlt.add(new AktieDef("ZURN.VX"));
-			listGewaehlt.add(new AktieDef("ZNGA"));
-			listGewaehlt.add(new AktieDef("ZAL.OL"));
+			listGewaehlt.add(new Aktie("ZURN.VX"));
+			listGewaehlt.add(new Aktie("ZNGA"));
+			listGewaehlt.add(new Aktie("ZAL.OL"));
 			buchstabe = 'Z';
 			break;
 		default:
@@ -291,10 +291,10 @@ public class Anlageuniversum {
 
 		}
 		
-		// Summe von aktien die gewï¿½hlt wurde = Summe
+		// Summe von aktien die gewählt wurde = Summe
 		BigDecimal summe = new BigDecimal("0");
 		
-		for (AktieDef item : listGewaehlt) {
+		for (Aktie item : listGewaehlt) {
 			//System.out.println(item. + item.getPrice());
 			
 		summe = summe.add(item.getPrice());
@@ -302,7 +302,7 @@ public class Anlageuniversum {
 		
 		}
 		
-		// Neu benï¿½tigte Variabeln
+		// Neu benötigte Variabeln
 		String kuWaehrung = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWaehrung();
 		double kuKapital = kunde.getKontoListe().get(0).getKapitalListe().get(0).getWertKapital();
 		int anzPakete = (int) (kuKapital / summe.doubleValue());
@@ -312,8 +312,8 @@ public class Anlageuniversum {
 		
 		// Console Output
 		System.out.println();
-		System.out.println("Sie haben sich fï¿½r Anlagestrategie '" + buchstabe + "' entschieden");
-		System.out.println("Der Betrag fï¿½r 1 Aktienpaket '" + buchstabe + "' ist: " + kuWaehrung + " " + summe);
+		System.out.println("Sie haben sich für Anlagestrategie '" + buchstabe + "' entschieden");
+		System.out.println("Der Betrag für 1 Aktienpaket '" + buchstabe + "' ist: " + kuWaehrung + " " + summe);
 		System.out.println();
 		System.out.println("Unser Vorschlag:");
 		System.out.println(anzPakete + " Mal das Aktienpaket '" + buchstabe + "'");
@@ -322,26 +322,15 @@ public class Anlageuniversum {
 		
 		System.out.println();
 		System.out.println("Total Kosten Aktien: " + totKostenAktien);
-		System.out.println("Ihr zur verfï¿½gung stehendes Kapital: " + kuWaehrung + " " + kuKapital);
+		System.out.println("Ihr zur verfügung stehendes Kapital: " + kuWaehrung + " " + kuKapital);
 		System.out.println("Restbetrag auf Ihrem Konto nach Transaktion: " + kuWaehrung + " " + restKonto);
 		System.out.println();
 		System.out.println("Einverstanden?");
 		einverstanden(einverstanden);
-		
-		
-		
-		// Summe des Preises der Aktien in diesem Array ausrechnen
-		// TODO vielleicht String to Int
-
-		// Ausrechnen wieviel mal ein GANZES Paket in unserem Kapital Platz hat
-		// // Modulo %
-		// TODO modulo = getWertKapitalTest %
-		// anlageuniversumDefin.getGewaehlteListe(); // <- getWert int | anla
-		// stringlist
 
 	}
 
-	public void annahme(List<AktieDef> listGewaehlt){
+	public void annahme(List<Aktie> listGewaehlt){
 		this.listGewaehlt = listGewaehlt;
 		
 		portfolio.setPortfolioList(listGewaehlt);
@@ -365,11 +354,11 @@ public class Anlageuniversum {
 		this.portfolio = portfolio;
 	}
 
-	public List<AktieDef> getListGewaehlt() {
+	public List<Aktie> getListGewaehlt() {
 		return listGewaehlt;
 	}
 
-	public void setListGewaehlt(ArrayList<AktieDef> listGewaehlt) {
+	public void setListGewaehlt(ArrayList<Aktie> listGewaehlt) {
 		this.listGewaehlt = listGewaehlt;
 	}
 

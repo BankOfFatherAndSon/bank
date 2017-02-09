@@ -1,79 +1,43 @@
 package ch.hwz.bfas;
 
+import java.io.IOException;
+import java.math.BigDecimal;
+
 import yahoofinance.Stock;
+import yahoofinance.YahooFinance;
 
-public class Aktie extends abstractPortfolio {
+public class Aktie {
+	private BigDecimal price;
+	private String name;
 
-	String isin, titelName, currency;
-	int valor;
-	double price, dividendPayment;
-	// date dividendDate;
-
-	private Kunde kunde;
-
-	
 	// Konstruktor
-	public Aktie(Stock stock) {
-	this.isin = stock.getSymbol();
+	public Aktie(String name) {
+		Stock stock = null;
+		try {
+			stock = YahooFinance.get(name);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		price = stock.getQuote().getPrice();
+
 	}
 
-	
-	
-	
-	public String getIsin() {
-		return isin;
-	}
-
-	public void setIsin(String isin) {
-		this.isin = isin;
-	}
-
-	public String getTitelName() {
-		return titelName;
-	}
-
-	public void setTitelName(String titelName) {
-		this.titelName = titelName;
-	}
-
-	public String getCurrency() {
-		return currency;
-	}
-
-	public void setCurrency(String currency) {
-		this.currency = currency;
-	}
-
-	public int getValor() {
-		return valor;
-	}
-
-	public void setValor(int valor) {
-		this.valor = valor;
-	}
-
-	public double getPrice() {
+	public BigDecimal getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(BigDecimal price) {
 		this.price = price;
 	}
 
-	public double getDividendPayment() {
-		return dividendPayment;
+	public String getName() {
+		return name;
 	}
 
-	public void setDividendPayment(double dividendPayment) {
-		this.dividendPayment = dividendPayment;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public Kunde getKunde() {
-		return kunde;
-	}
-
-	public void setKunde(Kunde kunde) {
-		this.kunde = kunde;
-	}
-	
 }

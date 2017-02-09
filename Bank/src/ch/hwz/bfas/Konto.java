@@ -54,14 +54,12 @@ public class Konto {
 		if (kontoEntry == 'a') {
 			System.out.print("Geben Sie die Kontonummer ein: ");
 			System.err.println("Fehler: Keine Kontonummern vorhanden.");
-
+			
 			// TODO Kundennummer auwahl einfügen
-			// int i = eingabe.nextInt();
-			// int auswahlKonto = new Konto(i).getKontonummer();
 			// TODO wiederholte eingabe fals falsche Kontonummer
-			// kontoNr = auswahlKonto;
 
-			// Neue Kontonummer
+
+		// Neue Kontonummer
 		} else {
 			System.out.println();
 			System.out.println("Erstelle neue Kontonummer..");
@@ -75,14 +73,14 @@ public class Konto {
 			
 			// Zuweisung von Konto an Kunde
 			Kunde.Kunde1.addKonto(Konto1);
-			
-			System.out.println("Möchten Sie gleich ein Kapital dieser Kontonummer hinzufügen?");
 			Konto.frageKapital();
 			
 		}}
 
 	public static void frageKapital(){
 
+			System.out.println("Möchten Sie gleich ein Kapital dieser Kontonummer hinzufügen?");		
+		
 			System.out.println("j = Ja | n = Nein");
 			System.out.println();
 			System.out.print("Hier eingeben: ");

@@ -59,26 +59,6 @@ public class Kunde {
 	}
 		
 	public static void addDepot(Depot depot) {
-		/*
-		 * Muss programmiert werden: Programm soll folgende Attribute auf ihre
-		 * Korrektheit kontrollieren: email, adresse, telefonnummer
-		 */
-
-		System.out.print("Geben Sie die Kundennummer ein: ");
-		int i = eingabe.nextInt();
-		
-		if (kundenListe.contains(i)) {
-		    System.out.println("Account found");
-		} else {
-		    System.out.println("Account not found");
-		}
-		
-		
-		System.out.println("Kundendatenüberprüfen");
-		
-		
-		
-		// (OK) 2. hinzufügen des Depots
 		depotListe.add(depot);
 	}
 
@@ -111,13 +91,10 @@ public class Kunde {
 			// System.out.print("Geben Sie die Kundennummer ein: ");
 			// int i = eingabe.next().charAt(0);
 			System.err.println("Fehler: Keine Kundenummern vorhanden.");
-
 			// TODO Kundennummer auwahl einfügen
-			// int auswahlKunde = Kunde(i).getKundennummer();
 			// TODO wiederholte eingabe falls falsche Kontonummer
-			// kundennummer = auswahlKunde;
 
-			// Neuer Kundennummer
+		// Neuer Kundennummer
 		} else {
 			System.out.println();
 			System.out.println("Erstelle neue Kundennummer..");
@@ -142,8 +119,6 @@ public class Kunde {
 			Kunde neuKunde = new Kunde(Kundennummer1, inVorname, inName, inEmail, inAdresse, inTelefon);
 			Kunde1 = neuKunde;
 			kundenListe.add(Kunde1);
-
-			System.out.println("Möchten Sie gleich ein Konto dieser Kundennummer hinzufügen?");
 			Kunde.frageKonto();
 			
 		}
@@ -151,6 +126,8 @@ public class Kunde {
 	}
 
 	public static void frageKonto(){
+		
+		System.out.println("Möchten Sie gleich ein Konto dieser Kundennummer hinzufügen?");
 
 		System.out.println("j = Ja | n = Nein");
 		System.out.println();

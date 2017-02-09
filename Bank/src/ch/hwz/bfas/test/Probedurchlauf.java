@@ -11,20 +11,6 @@ import ch.hwz.bfas.Portfolio;
 public class Probedurchlauf {
 	public static void main(String[] args) {
 
-		/*Kunde kunde;
-		Konto konto;
-		Kapital kapital;
-
-		abstractPortfolio abstractPortfolio;
-		Anlagevorschlag anlagevorschlag;
-		Portfolio portfolio;
-
-		Aktie aktie;
-
-		Depot depot;
-
-		AnlageuniversumDefinitiv anlageuniversumDefinitiv;*/
-
 		// Kapital wird definiert
 		Kapital testKapital = new Kapital("CHF", 1000.0, true);
 		System.err.println(testKapital.getClass().getSimpleName() + " definiert:");
