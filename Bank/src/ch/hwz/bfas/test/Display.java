@@ -1,5 +1,6 @@
-package ch.hwz.bfas;
+package ch.hwz.bfas.test;
 
+import ch.hwz.bfas.Kunde;
 import ch.hwz.bfas.util.KundenIDCreator;
 
 public class Display {
